@@ -58,12 +58,13 @@ executable coreos-rev-proxy
 
   -- Other library packages from which modules are imported.
   build-depends:       base >=4.6 && <4.7
-		     , monad-control
-		     , http-reverse-proxy
-		     , wai
-		     , http-client
-		     , warp
-		     , network
+                     , monad-control
+                     , http-reverse-proxy
+                     , wai
+                     , http-client
+                     , warp
+                     , network
+                     , bytestring
 
   -- Directories containing source files.
   hs-source-dirs:      src
