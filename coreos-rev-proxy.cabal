@@ -66,6 +66,8 @@ executable coreos-rev-proxy
                      , warp
                      , network
                      , bytestring
+                     , aeson
+                     , split
 
   -- Directories containing source files.
   hs-source-dirs:      src
