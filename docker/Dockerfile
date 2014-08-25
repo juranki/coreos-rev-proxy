@@ -5,3 +5,4 @@ ADD coreos-rev-proxy /
 EXPOSE 80
 
 ENTRYPOINT ["/coreos-rev-proxy"]
+CMD []
