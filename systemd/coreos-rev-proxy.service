@@ -1,0 +1,13 @@
+[Unit]
+Description=CoreOSRevProxy
+After=docker.service
+After=etcd.service
+Requires=docker.service
+Requires=etcd.service
+
+[Service]
+TimeoutStartSec=15s
+ExecStart=/usr/bin/docker run --rm --name coreos-rev-proxy -e "ETCD_URL=http://172.17.42.1:4001/v2/keys" -e "ETCD_PATH=/http-service" juranki/coreos-rev-proxy
+
+[Install]
+WantedBy=multi-user.target
