@@ -25,7 +25,7 @@ etcd contents is of the form
 core@core1 ~ $ etcdctl ls --recursive /http-service
 /http-service/prefix1
 /http-service/prefix2
-core@core1 ~ $ etcdctl get /http-service/testi
+core@core1 ~ $ etcdctl get /http-service/prefix1
 10.11.100.100:8080
 core@core1 ~ $
 ```
