@@ -10,14 +10,14 @@ Functionality:
 configuration
 -------------
 
-Requires environvariables ETCD_URL and ETCD_PATH to access configuration in etcd. For example:
+Requires environment variables ETCD_URL and ETCD_PATH to access configuration in etcd. For example:
 
 ```
 ETCD_URL=http://172.17.42.1:4001/v2/keys
 ETCD_PATH=/http-service
 ```
 
-coreos-rev-proxy watches changes in the specified etcd path and applies them immediatly.
+coreos-rev-proxy watches changes in the specified etcd path and applies them immediately.
 
 etcd contents is of the form
 
